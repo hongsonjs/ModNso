@@ -17,7 +17,6 @@
     <DebugType>none</DebugType>
     <WarningLevel>0</WarningLevel>
   </PropertyGroup>
-  <ItemGroup />
   <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>..\Game\NinjaSchool_219_Data\Managed\UnityEngine.dll</HintPath>

@@ -398,3 +398,5 @@ FodyWeavers.xsd
 *.sln.iml
 
 Game/
+#ignore output_log
+Game/NinjaSchool_219_Data/output_log.txt
