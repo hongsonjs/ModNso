@@ -17,13 +17,15 @@
     <DebugType>none</DebugType>
     <WarningLevel>0</WarningLevel>
   </PropertyGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="UnityEngine" Version="1.0.0" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>..\..\NinjaSchool_219_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="copy &quot;$(TargetPath)&quot; &quot;E:\Workspace\c#\ModNso\Game\NinjaSchool_219_Data\Managed&quot;" />
+    <Exec Command="copy &quot;$(TargetPath)&quot; &quot;E:\WorkSpace\c#\ModNso\Game\NinjaSchool_219_Data\Managed&quot;" />
   </Target>
 </Project>

@@ -37,9 +37,9 @@ public class GameMidlet
 
 	public static string linkDefault;
 
-	public static string java = "Tone:112.213.94.205:14444:0:0,Bokken:112.213.84.18:14444:0:0,Shuriken:27.0.14.73:14444:0:0,Tessen:27.0.14.73:14444:1:0,Kunai:112.213.94.135:14444:0:0,Katana:112.213.94.161:14444:0:0,Global-1:52.221.222.194:14444:0:1";
+	public static string java = smartPhone;
 
-	public static string smartPhone = "Sensha (New):nj9.teamobi.com:14444:0:0,Tone:nj5.teamobi.com:14444:0:0,Bokken:nj1.teamobi.com:14444:0:0,Shuriken:nj2.teamobi.com:14444:0:0,Tessen:nj2.teamobi.com:14444:1:0,Kunai:nj4.teamobi.com:14444:0:0,Katana:nj3.teamobi.com:14444:0:0,Global-1:nj6.teamobi.com:14444:0:1";
+	public static string smartPhone = "LOCAL:127.0.0.1:14444:0:0,NSOKISS:sv1.nsokiss.me:14444:0:0,Kunai:nj4.teamobi.com:14444:0:0,Global-1:nj6.teamobi.com:14444:0:1";
 
 	public static string[] nameServer;
 
@@ -209,7 +209,7 @@ public class GameMidlet
 	public static void getStrSv()
 	{
 		string empty = string.Empty;
-		empty = ((CLIENT_TYPE != 1) ? connectHTTP("http://teamobi.com/srvips/NJEN.txt") : connectHTTP("http://teamobi.com/srvips/NJVI.txt"));
+		//empty = ((CLIENT_TYPE != 1) ? connectHTTP("http://teamobi.com/srvips/NJEN.txt") : connectHTTP("http://teamobi.com/srvips/NJVI.txt"));
 		if (empty.Equals(string.Empty))
 		{
 			empty = ((CLIENT_TYPE != 1) ? smartPhone : java);
